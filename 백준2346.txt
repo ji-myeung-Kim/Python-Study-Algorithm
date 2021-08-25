@@ -1,0 +1,57 @@
+pair와 vector를 이용해서 입력 값을 저장한다. pair에 인덱스와 움직일 숫자를 넣어서 vector에 저장을 한다. 그 다음 부터는 vector에 맨 앞에 저장되어 있는 값을 출력하고 바꿔주면 된다. 움직일 숫자가 양수이면 vector의 앞에 있는 값을 뒤로 보내주고, 음수면 vector의 뒤에 있는 값을 앞에 넣어준다.
+
+ 
+
+1. vector의 front 값의 인덱스를 출력 후 삭제
+
+2. front 값의 움직일 수가 양수이면 (움직일 수 - 1)만큼 다음 front 값들을 뒤로 보냄
+
+3. front 값의 움직일 수가 음수이면 그 수만큼 back 값들을 앞으로 보냄
+
+4. vector가 빌 때까지 1, 2, 3 반복
+
+#include <iostream>
+#include <vector>
+ 
+using namespace std;
+ 
+int N;
+vector<pair<int ,int>> v;
+ 
+int main()
+{
+    cin.tie(0);
+    ios::sync_with_stdio(0);
+ 
+    cin >> N;
+    for (int i=1, t; i<=N; i++)
+    {
+        cin >> t;
+        v.push_back({i, t});
+    }
+ 
+    while (!v.empty())
+    {
+        cout << v.front().first << ' ';
+        int move = v.front().second;
+        v.erase(v.begin());
+        if (move > 0)
+        {
+            for (int i=0; i<move-1; i++)
+            {
+                v.push_back(v.front());
+                v.erase(v.begin());
+            }
+        }
+        else
+        {
+            for (int i=0; i<-move; i++)
+            {
+                v.insert(v.begin(), v.back());
+                v.pop_back();
+            }
+        }
+    }
+ 
+    return 0;
+}
