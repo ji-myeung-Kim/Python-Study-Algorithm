@@ -1,30 +1,25 @@
-def solution(ballon, paper):
-    b_list = [(i, v) for (i, v) in enumerate(paper)]
-    answer = []
+N = int(input())
 
-    picked_index = 0
+list_N = list(map(int, input().split()))
+list_index = []
+result = []
 
-    while len(b_list) > 0:
-        papernum = b_list.pop(picked_index)  # pop, 즉 풍선 터뜨리기
-        answer.append(papernum[0]+1)  # 터뜨린 풍선 answer에 넣기
-        print("터진 풍선 인덱스 :", papernum[0]+1, "값:", papernum[1])
-        if (len(b_list) > 0):
-            if papernum[1] > 0:
-                print("양수")
-                picked_index = ((papernum[1]) % len(b_list)) - 1  # 다음 터뜨릴 풍선 찾기
-                print("다음에 찾을 풍선 인덱스 :", picked_index)
-            else:
-                print("음수")
-                picked_index = (papernum[0]+1+papernum[1]) % len(b_list)
-                print("다음에 찾을 풍선 인덱스 :", picked_index)
+for i in range(1, N + 1):
+    list_index.append(i)
 
-        else:
-            break
+idx = 0
+k = list_N.pop(idx)  # k 는 풍선 속 숫자
+result.append(list_index.pop(idx))
 
-        print("-----------------------------")
+while (len(list_N) > 0):
 
+    if (k < 0):
+        idx = (idx + k) % len(list_N)
+    else:
+        idx = (idx + (k - 1)) % len(list_N)
 
-    return answer
+    k = list_N.pop(idx)
+    result.append(list_index.pop(idx))
 
-paper = [3, 2, 1, -3, -1]
-print(solution(5, paper))
+for j in range(N):
+    print(result[j], end=" ")
