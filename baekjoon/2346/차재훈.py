@@ -37,3 +37,4 @@ if __name__ == "__main__":
         queue = deque([(index, value) for index, value in enumerate(map(int, input().split()))])
 
         print(solution(n, queue))
+        
