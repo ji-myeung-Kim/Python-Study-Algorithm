@@ -67,7 +67,7 @@ print(solution("011"))
 
 
 
-################
+### itertools 모듈 활용 ###
 # from itertools import permutations
 # import math
 

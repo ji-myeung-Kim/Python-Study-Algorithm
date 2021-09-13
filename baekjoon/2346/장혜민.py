@@ -16,5 +16,4 @@ while balloons:
     elif value < 0:
         idx = (idx + value) % len(balloons)
 
-
 print(answer) 
