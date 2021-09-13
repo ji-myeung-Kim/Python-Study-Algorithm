@@ -23,6 +23,7 @@
 #             answer = sum(result)
 #     return answer
 
+
 def solution(triangle):
     answer = ""
     return answer

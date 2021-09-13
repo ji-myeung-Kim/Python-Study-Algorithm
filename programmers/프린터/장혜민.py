@@ -26,4 +26,4 @@ def solution(priorities, location):
                 return cnt
 
 
-# print(solution(priorities, location)) 
+print(solution(priorities, location)) 

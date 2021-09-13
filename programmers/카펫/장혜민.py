@@ -15,3 +15,4 @@ def solution(brown, yellow):
         if (width-2)*(height-2) == yellow:
             answer = [width, height]         
             return answer
+            
