@@ -2,15 +2,13 @@
 https://www.acmicpc.net/problem/1654
 백준 1654 - 랜선자르기
 이분탐색
-
-sys.stdin.readline() 사용이유는 readme 참고
 """
 
 import sys
 
 def solution():
     K, N = map(int, input().split())
-    lan = [int(sys.stdin.readline()) for _ in range(K)]
+    lan = [int(sys.stdin.readline()) for _ in range(K)] # sys.stdin.readline() 사용이유는 readme 참고
     
     min_value = 1 # 랜선의 최소 길이를 1로 설정
     max_value = max(lan) # 랜선중 가장 긴 길이를 max값으로 설정
