@@ -8,3 +8,4 @@
 ### 참고
 - [Input vs. sys.stdin.readline 차이점](https://buyandpray.tistory.com/7)
 - [파이썬 입력 받기(sys.stdin.readline)](https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline)
+- [풀이 참고](https://st-lab.tistory.com/269) : 은진님이 찾은 블로그인데 코드는 파이썬 아니지만 설명이 엄청 자세해서 이해하기 쉽습니다.
