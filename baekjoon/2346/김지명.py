@@ -17,4 +17,6 @@ while data:
     result.append(index.pop(idx))
 
 for r in result:
+
     print(r, end=' ')
+
