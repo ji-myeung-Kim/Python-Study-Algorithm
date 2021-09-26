@@ -1,4 +1,3 @@
-
 def solution(brown, yellow):
     all = brown + yellow
 
@@ -6,7 +5,6 @@ def solution(brown, yellow):
         if all % h == 0:
             w = all/h
             if w >= h:
-                # print(w,h)
                 if (w-2)*(h-2) == yellow :
                     return [int(w),h]
 
