@@ -36,3 +36,4 @@
 | 3주차 | 이분탐색 | [랜선자르기](https://www.acmicpc.net/problem/1654) |  |
 | 4주차 | BFS, DFS | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165?language=python3) | [미로 탐색](https://www.acmicpc.net/problem/2178) |
 | 5주차 추석연휴 | BFS, DFS | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) |  |
+| 6주차 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/parts/12077) | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |

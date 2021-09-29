@@ -21,7 +21,7 @@ def solution(numbers, target):
 
 print(solution([1, 1, 1, 1, 1], 3))
 
-# 위으 코드보다 효율적인 풀이
+# 위의 코드보다 효율적인 풀이
 def solution(numbers, target):
     result_list = [0] # 초기값 설정
     for number in numbers:
