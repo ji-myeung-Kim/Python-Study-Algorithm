@@ -66,10 +66,10 @@ sorted(total_dict, key=lambda x:total_dict[x], reverse=True)으로 정렬을 했
 key[0]과 같은 복잡한 형태가 아닌 key로 검색이 가능해서 조금더 직관적?인 코드가 되지 않을까 싶다.
 """
 if __name__ == '__main__':
-    # genres = ["classic", "pop", "classic", "classic", "pop"]
-    # genres2 = ["classic", "pop", "classic", "classic","jazz","pop", "Rock", "jazz"]
-    # plays = [500, 600, 150, 800, 2500]
-    # plays2 = [500, 600, 150, 800, 1100, 2500, 100, 1000]
-    # print(solution(genres, plays)) # [4, 1, 3, 0]
-    # print(solution(genres2, plays2)) # [5, 1, 4, 7, 3, 0, 6]
+    genres = ["classic", "pop", "classic", "classic", "pop"]
+    genres2 = ["classic", "pop", "classic", "classic","jazz","pop", "Rock", "jazz"]
+    plays = [500, 600, 150, 800, 2500]
+    plays2 = [500, 600, 150, 800, 1100, 2500, 100, 1000]
+    print(solution(genres, plays)) # [4, 1, 3, 0]
+    print(solution(genres2, plays2)) # [5, 1, 4, 7, 3, 0, 6]
     
