@@ -1,3 +1,6 @@
+# 백준_while문_A+B -5
+# https://www.acmicpc.net/problem/11021
+
 t = int(input())
 for i in range(1, t+1): # 1부터 t까지
     a, b = map(int, input().split())
