@@ -44,8 +44,7 @@ def solution(genres, plays):
     
     # 장르별 총 재생횟수가 저장된 딕셔너리를 내림차순으로 정렬해준다.
     sorted_total_list = sorted(total_dict.items(), key=lambda x:x[1], reverse=True)
-    print(f'{sorted(total_dict, key=lambda x:total_dict[x], reverse=True)} -------------------------------value')
-    print(f'{sorted_total_list} -------------------------------sorted')
+    
     # 내림차순으로 정렬된 장르별 총 재생횟수 딕셔너리를 반복한다.
     for key in sorted_total_list:
         # 장르별 노래들의 재생횟수가 저장된 딕셔너리의 장르별 재생횟수(value)를 내림차순으로 정렬한다.
@@ -73,3 +72,4 @@ if __name__ == '__main__':
     plays2 = [500, 600, 150, 800, 1100, 2500, 100, 1000]
     print(solution(genres, plays)) # [4, 1, 3, 0]
     print(solution(genres2, plays2)) # [5, 1, 4, 7, 3, 0, 6]
+    

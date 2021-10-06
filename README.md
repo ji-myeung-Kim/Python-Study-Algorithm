@@ -8,6 +8,7 @@
 - 김지명
 - 마유진
 - 신지혜
+- 임우송
 - 장혜민
 - 정은진
 - 차재훈
@@ -22,7 +23,7 @@
 6. 매주 월요일 푼 문제 본인레포 또는 브랜치에서 main으로 pull-request(태경님 레포의 main으로)
 7. pull-request 머지 진행하지 않고 카톡방에 {문제번호} {pull-request 링크} 피드백 요청
 9. 코드리뷰의 경우 전달받은 PR링크에서 의견 작성
-10. merge작업은 매주 수요일 스타디때 피드백 후 진행(매주 수요일 스터디 시작후 화면공유 후 한명이 merge진행)
+10. merge작업은 매주 수요일 스터디때 피드백 후 진행(매주 수요일 스터디 시작후 화면공유 후 한명이 merge진행)
 11. 성공하지 못한 문제를 PR 할때 성공못한 이유를 주석 및 PR 내용에 작성해주세요.
 12. PR이 open 상태에서 다른 문제를 풀 경우 {이름이니셜}-{문제번호or문제이름}으로 브랜치를 새로 만들어 작업해주세요.
 13. 위의 내용만으로 이해가 어렵다면 카톡으로 물어봐주세요
@@ -37,3 +38,4 @@
 | 4주차 | BFS, DFS | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165?language=python3) | [미로 탐색](https://www.acmicpc.net/problem/2178) |
 | 5주차 추석연휴 | BFS, DFS | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) |  |
 | 6주차 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |
+| 7주차 | 재귀 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) |
