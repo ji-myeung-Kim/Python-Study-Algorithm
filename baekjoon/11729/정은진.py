@@ -5,10 +5,10 @@ input = sys.stdin.readline
 
 def top(disc, start, temp, target):
     if disc == 1:                           # 2️⃣ 맨 아래 원판을 목표 기둥으로 옮기기
-        print(start, " ", target)        
+        print(start, target)
     else:
         top(disc - 1, start, target, temp)  # 1️⃣ 맨 아래 원판을 제외한 모든 원판을 보조 기둥으로 옮기기
-        print(start, " ", target)
+        print(start, target)
         top(disc - 1, temp, start, target)  # 3️⃣ 나머지 원판들을 목표 기둥으로 옮기기
 
 a = int(input())
