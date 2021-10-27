@@ -30,12 +30,13 @@
 
 ### 일정표
 
-| 주차 | 문제유형 | 1 | 2 |
-| ------ | ------ | ------ | ------ |
-| 1주차 | 스택/큐 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | [풍선 터뜨리기](https://www.acmicpc.net/problem/2346) |
-| 2주차 | 완전탐색 | [소수찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) |
-| 3주차 | 이분탐색 | [랜선자르기](https://www.acmicpc.net/problem/1654) |  |
-| 4주차 | BFS, DFS | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165?language=python3) | [미로 탐색](https://www.acmicpc.net/problem/2178) |
-| 5주차 추석연휴 | BFS, DFS | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) |  |
-| 6주차 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) |
-| 7주차 | 재귀 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) |
+| 주차 | 문제유형 | 1 | 2 | 3 |
+| ------ | ------ | ------ | ------ | ------ |
+| 1주차 | 스택/큐 | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) | [풍선 터뜨리기](https://www.acmicpc.net/problem/2346) | - |
+| 2주차 | 완전탐색 | [소수찾기](https://programmers.co.kr/learn/courses/30/lessons/42839) | [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842) | - |
+| 3주차 | 이분탐색 | [랜선자르기](https://www.acmicpc.net/problem/1654) | - |
+| 4주차 | BFS, DFS | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165?language=python3) | [미로 탐색](https://www.acmicpc.net/problem/2178) | - |
+| 5주차 추석연휴 | BFS, DFS | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | - |
+| 6주차 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | - |
+| 7주차 | 재귀 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) | - |
+| 8주차 | 동적계획법 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [태권왕](https://www.acmicpc.net/problem/14562) | [퇴사2](https://www.acmicpc.net/problem/15486) |
