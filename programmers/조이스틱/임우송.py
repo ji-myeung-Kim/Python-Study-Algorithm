@@ -101,30 +101,31 @@ name2 = "JAN"
 name3 = "ACDAAAB"  
 
 def solution(name):
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"  # A부터 N까지의 거리는 순방향, 역방향 모두 13(기준점) => B~M은 순방향, O~Z는 역방향이 최소거리
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"      # A부터 N까지의 거리는 순방향, 역방향 모두 13(기준점) => B~M은 순방향, O~Z는 역방향이 최소거리
     pivot = len(alphabet)/2     # 13 = N까지의 거리 
     vertical = 0
     horizon = 0
-    non_A = len(name) - name.count("A")     # 주어진 name에서 A가 아닌 문자열 갯수 측정
+    non_A = len(name) - name.count("A")    # 주어진 name에서 A가 아닌 문자열 갯수 측정
 
  # ========= [가로조작] =========
     if non_A != 0:       
         horizon = 20    # [가로조작]의 최댓값 설정 
-        for i in range(len(name)):        # name을 순환하면서 첫 커서를 놓는다(커서위치=i) ----> 커서가 첫 글자로 고정되지 않고, name의 모든 글자를 시작위치로 설정해보면서 최솟값을 산출한다 
+        for i in range(len(name)):      # name을 순환하면서 첫 커서를 놓는다(커서위치=i) ----> 커서가 첫 글자로 고정되지 않고, name의 모든 글자를 시작위치로 설정해보면서 최솟값을 산출한다 
             name_double = name*2      
             count = 0
-            for j in range(i, len(name_double)):      # 커서위치 i 를 기준으로 [name전체를] 순방향, 역방향 모두 순환할 수 있게 name_double을 대상으로 삼음 
-                                                      # name이 "ABAACA"인 경우 첫 커서 위치가 C라면, 마지막 A를 지나 다시 첫 번째 A로 돌아오는 방법으로 name_double을 생성 
-                                                        # ex) 로직은 ABAA[CA ABAA]CA 에서 대괄호 부분만 계산하고 종료된다
-                                                      # 역방향의 경우, B에서 역방향으로 C까지 도달하는 거리는, C에서 순방향으로 B에 도달하는 거리와 동일하다. ----> name을 뒤집어 계산할 필요 없음 
-                                                        # ex) AB]AA[CA = ABAA[CA AB]AACA
+            for j in range(i, len(name_double)):     
+                                        # 커서위치 i 를 기준으로 [name전체를] 순방향, 역방향 모두 순환할 수 있게 name_double을 대상으로 삼음 
+                                        # name이 "ABAACA"인 경우 첫 커서 위치가 C라면, 마지막 A를 지나 다시 첫 번째 A로 돌아오는 방법으로 name_double을 생성 
+                                        # ex) 로직은 ABAA[CA ABAA]CA 에서 대괄호 부분만 계산하고 종료된다
+                                        # 역방향의 경우, B에서 역방향으로 C까지 도달하는 거리는, C에서 순방향으로 B에 도달하는 거리와 동일하다. ----> name을 뒤집어 계산할 필요 없음 
+                                        # ex) AB]AA[CA = ABAA[CA AB]AACA
                                                       
                 if name_double[j] != "A":
                     count += 1       
                     if count == non_A:        # A가 아닌 문자열(non_A)을 측정한 갯수가, 주어진 name의 것과 같으면 반복문 탈출 
-                        if horizon > j-i:         # j는 시작커서i 에서 모든 non_A가 측정된 때의 거리 
+                        if horizon > j-i:     # j는 시작커서i 에서 모든 non_A가 측정된 때의 거리 
                             horizon = j-i             
-                        break                      # => name의 모든 글자를 순환하면서, 가장 짧은 거리를 horizon에 담게 된다 =======> ※ 진행하다 돌아오는 케이스 상정하지 않았을 경우임!
+                        break                 # => name의 모든 글자를 순환하면서, 가장 짧은 거리를 horizon에 담게 된다 =======> ※ 진행하다 돌아오는 케이스 상정하지 않았을 경우임!
                                                     
  # ========= [세로조작] =========
     for n in name:       
