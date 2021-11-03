@@ -4,6 +4,8 @@ https://www.acmicpc.net/problem/9184
 
 메모이제이션 : 동일한 연산을 반복해야 할 때 이전에 연산한 값을 메모리에 미리 저장해 둠으로써 계산의 반복수행을 제거하여 프로그램 실행 속도를 향상시키는 기술
 '''
+import sys
+
 MAX = 21
 # 메모이제이션을 위한 list 할당 / dp[][][]
 dp = [[[0]*MAX for _ in range(MAX)] for __ in range(MAX)]
@@ -30,7 +32,7 @@ def w(a, b, c):
 
 
 while True:
-    a, b, c = map(int, input().split())
+    a, b, c = list(map(int, sys.stdin.readline().split(' ')))
 
     if a == -1 and b == -1 and c == -1:
         break
