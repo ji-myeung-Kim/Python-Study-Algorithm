@@ -1,21 +1,33 @@
-    from collections import deque
+from collections import deque
 
 def bfs(S, T):
     q = deque()
     q.append((S, T, 0))
-    check = [-1] * 200
     while q:
-        node, t, c = q.popleft()
+        hit, hurt, cnt = q.popleft()
         #내가때린게 맞은거보다 더 작을동안
-        if node <= t and check[node] == -1 :
+        if hit <= hurt  :
             # 내가 맞은거 *2, 타격+3 발차기횟수 + 1
-            q.append((node*2, t+3, c+1))
+            q.append((hit*2, hurt+3, cnt+1))
             # 내가 맞은거 +1, 발차기횟수 + 1
-            q.append((node+1, t, c+1))
-            if node == t:
-                return c
+            print(q, " doubleattack" )
+            q.append((hit+1, hurt, cnt+1))
+            print(q, "singleattack")
+
+            if hit == hurt:
+                return cnt
 
 C = int(input())
 for _ in range(C):
     S,T = map(int, input().split())
     print(bfs(S,T))
+
+# 10 20
+# 20 23
+# 21
+# 22
+# 23
+# 15 62
+# 30 65
+# 60 68
+
