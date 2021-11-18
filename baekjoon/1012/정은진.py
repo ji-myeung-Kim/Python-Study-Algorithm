@@ -21,6 +21,7 @@ def ans(lists, x, y):
 input = sys.stdin.readline
 
 testcase = int(input())
+answers = []
 
 for i in range(testcase):
     answer = 0
@@ -28,7 +29,7 @@ for i in range(testcase):
     testl = []
 
     for j in range(graphlist[2]):
-        a, b = list(map(int, input().split()))
+        a, b = map(int, input().split())
         testl.append((a, b))
 
     while len(testl) != 0:
@@ -36,4 +37,7 @@ for i in range(testcase):
         ans(testl, temp[0], temp[1])
         answer += 1
 
-    print(answer)
+    answers.append(answer)
+
+for i in answers:
+    print(i)
