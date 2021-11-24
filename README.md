@@ -40,5 +40,5 @@
 | 5주차 추석연휴 | BFS, DFS | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) | - |
 | 6주차 | 해시 | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579) | - |
 | 7주차 | 재귀 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) | - |
-| 8주차 | 동적계획법 | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [태권왕](https://www.acmicpc.net/problem/14562) | [퇴사2](https://www.acmicpc.net/problem/15486) |
+| 8주차 | - | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [태권왕](https://www.acmicpc.net/problem/14562) | [퇴사2](https://www.acmicpc.net/problem/15486) |
 | 9주차 | - | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | [유기농 배추](https://www.acmicpc.net/problem/1012) | - |

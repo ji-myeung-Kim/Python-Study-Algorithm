@@ -4,22 +4,22 @@ https://programmers.co.kr/learn/courses/30/lessons/43165?language=python3
 """
 
 # 명절 전에 참고해서 풀었으나 기억이 나질 않아 주석 못담
-def solution(numbers, target):
-    answer = 0
-    queue = [[numbers[0],0], [-1*numbers[0],0]]
-    n = len(numbers)
-    while queue:
-        temp, idx = queue.pop()
-        idx += 1
-        if idx < n:
-            queue.append([temp+numbers[idx], idx])
-            queue.append([temp-numbers[idx], idx])
-        else:
-            if temp == target:
-                answer += 1
-    return answer
+# def solution(numbers, target):
+#     answer = 0
+#     queue = [[numbers[0],0], [-1*numbers[0],0]]
+#     n = len(numbers)
+#     while queue:
+#         temp, idx = queue.pop()
+#         idx += 1
+#         if idx < n:
+#             queue.append([temp+numbers[idx], idx])
+#             queue.append([temp-numbers[idx], idx])
+#         else:
+#             if temp == target:
+#                 answer += 1
+#     return answer
 
-print(solution([1, 1, 1, 1, 1], 3))
+# print(solution([1, 1, 1, 1, 1], 3))
 
 # 위의 코드보다 효율적인 풀이
 def solution(numbers, target):
@@ -34,4 +34,5 @@ def solution(numbers, target):
     return answer
 
 # 테스트 케이스
-print(solution([1, 1, 1, 1, 1], 3))
+if __name__ == '__main__':
+    print(solution([1, 1, 1, 1, 1], 3))
