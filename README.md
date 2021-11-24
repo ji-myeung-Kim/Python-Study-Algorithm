@@ -42,3 +42,4 @@
 | 7주차 | 재귀 | [신나는 함수 실행](https://www.acmicpc.net/problem/9184) | [하노이 탑 이동 순서](https://www.acmicpc.net/problem/11729) | - |
 | 8주차 | - | [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) | [태권왕](https://www.acmicpc.net/problem/14562) | [퇴사2](https://www.acmicpc.net/problem/15486) |
 | 9주차 | - | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | [유기농 배추](https://www.acmicpc.net/problem/1012) | - |
+| 11 주차 | DP | [돌 게임](https://www.acmicpc.net/problem/9655) | [설탕배달](https://www.acmicpc.net/problem/2839) | - |
