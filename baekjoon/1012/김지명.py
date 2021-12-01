@@ -94,6 +94,15 @@ for i in range(t):
         x, y = map(int,input().split())
         graph[x][y] = 1
         print(graph)
+
+    for a in range(n):
+        for b in range(m):
+            if graph[a][b] == 1:
+                bfs(graph, a, b)
+                cnt +=1
+                print(graph)
+print(cnt)
+
 # [
 #     [0, 0, 1], 
 #     [0, 0, 1], 
@@ -109,10 +118,3 @@ for i in range(t):
 #     [0, 0, 0], 
 #     [1, 0, 0]
 # ]
-    for a in range(n):
-        for b in range(m):
-            if graph[a][b] == 1:
-                bfs(graph, a, b)
-                cnt +=1
-                print(graph)
-print(cnt)
