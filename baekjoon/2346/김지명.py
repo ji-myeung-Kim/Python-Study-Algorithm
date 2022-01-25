@@ -17,8 +17,4 @@ while data:
     result.append(index.pop(idx))
 
 for r in result:
-<<<<<<< HEAD
     print(r, end=' ')
-=======
-    print(r, end=' ')
->>>>>>> 7b42cdf ([김지명]백준1654풀이)
