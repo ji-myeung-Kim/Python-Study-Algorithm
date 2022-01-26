@@ -1,6 +1,7 @@
 
 import sys
 
+# 이분할 탐색
 def Binary_Search_Upper(data_list, x):                  #주어진 list에서 x보다 큰 데이터의 개수를 반환; log n 안에 찾음
     left = 0
     right = len(data_list) - 1
@@ -22,10 +23,9 @@ for i in range(n):
 
 
     if i % 2 == 0:
-        down.append(int(input_num()))
+        down.append(input_num)
     else:
-        up.append(int(input_num()))
-
+        up.append(input_num)
 down.sort()
 up.sort()
 
