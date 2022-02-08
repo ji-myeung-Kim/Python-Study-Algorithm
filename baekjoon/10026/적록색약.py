@@ -13,7 +13,6 @@ count_normal, count_nanshi=  0, 0
 
 def bfs_search(x, y):
     q.append([x, y])
-    # visited[x][y] = count
     while q:
         x, y = q.popleft()
         for i in range(4):
@@ -23,8 +22,6 @@ def bfs_search(x, y):
                 if color_list[nx][ny] == color_list[x][y] and visited[nx][ny] == 0:
                     q.append([nx, ny])
                     visited[nx][ny] = 1
-                    # print(color_list)
-
 
 for i in range(n):
     for j in range(n):

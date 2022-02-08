@@ -34,7 +34,7 @@ range_count = 0
 
 
 for i in range(1, h + 1):
-    down_count = Binary_Search_Upper(down, i- 1)
+    down_count = Binary_Search_Upper(down, i - 1)
     top_count =  Binary_Search_Upper(up, h-i)
     now_count = down_count + top_count
 
