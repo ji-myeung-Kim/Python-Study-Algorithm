@@ -1,14 +1,13 @@
-
 from collections import deque
 import sys
 f = sys.stdin.readline
 
-n, m, k, x = map(int, f().split())
-graph = [[] for _ in range(n+1)]
-distance = [0] * (n+1)
-visited = [False] * (n+1)
+city_count, street_count, path, start_point = map(int, f().split())
+graph = [ [] for _ in range(city_count+1)]
+visited = [False] * (city_count+1)
+distance = [0] * (city_count+1)
 
-for _ in range(m):
+for _ in range(street_count):
     a, b = map(int, f().split())
     graph[a].append(b)
 
@@ -17,14 +16,15 @@ def bfs(start):
     q = deque([start])
     visited[start] = True
     distance[start] = 0
+
     while q:
         now = q.popleft()
         for i in graph[now]:
             if not visited[i]:
                 visited[i] = True
-                q.append(i)
                 distance[i] = distance[now] + 1
-                if distance[i] == k:
+                q.append(i)
+                if distance[i] == path:
                     answer.append(i)
     if len(answer) == 0:
         print(-1)
@@ -33,4 +33,4 @@ def bfs(start):
         for i in answer:
             print(i, end='\n')
 
-bfs(x)
+bfs(start_point)
